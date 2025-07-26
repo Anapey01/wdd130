@@ -12,6 +12,8 @@
 header {
     background-color: var(--primary-color);
     color: var(--neutral-light);
+    display: grid;
+    grid-template-columns: 1fr auto;
 }
 
 *{
@@ -38,6 +40,11 @@ h1, h2 {
 nav, p, article, section {
     padding: 16px;
     margin: 8px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none; /* optional: removes underline */
 }
 
 .socialMedia a{
