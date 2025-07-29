@@ -1,22 +1,22 @@
+/* ===========================
+   Root Variables (Theme Colors & Fonts)
+   =========================== */
 :root {
     --primary-color: #0a3d62;
     --secondary-color: #1e6254;
     --accent1-color: #d36b2b;
     --accent2-color: #d4a017;
     --neutral-light: #f9f8f4;
-    --text-color:#2c2c2c;
+    --text-color: #2c2c2c;
+
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Inter', sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--neutral-light);
-    display: grid;
-    grid-template-columns: 1fr auto;
-}
-
-*{
+/* ===========================
+   Global Resets
+   =========================== */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -27,36 +27,94 @@ body {
     color: var(--text-color);
 }
 
+/* Limit max-width of major blocks for mobile design */
 header, body, footer {
     width: 480px;
     margin: 0 auto;
 }
 
+/* ===========================
+   Headings
+   =========================== */
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* ===========================
+   Header and Navigation
+   =========================== */
+header {
+    background-color: var(--primary-color);
+    color: var(--neutral-light);
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+/* Logo styling */
+header img {
+    width: auto;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Removes underline */
+    padding: 8px 16px;
+    margin: 0 4px;
+}
+
+/* List styling if used with UL (not active in this HTML) */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===========================
+   Layout Utility for Spacing
+   =========================== */
 nav, p, article, section {
     padding: 16px;
     margin: 8px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none; /* optional: removes underline */
+/* ===========================
+   Social Media Section
+   =========================== */
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
 }
 
-.socialMedia a{
+.socialMedia a {
     text-decoration: none;
 }
 
+.socialMedia img {
+    width: 32px;
+    height: 32px;
+}
+
+/* ===========================
+   Hero Section
+   =========================== */
 .hero {
     position: relative;
 }
 
 .hero img {
-    display : block;
+    display: block;
     width: 100%;
     height: auto;
 }
@@ -75,3 +133,56 @@ h1 {
     width: 125px;
     float: right;
 }
+
+/* ===========================
+   History Section (Two Column)
+   =========================== */
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.history-content p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* ===========================
+   Gallery Section
+   =========================== */
+/* Uncomment the following styles if you want borders and background */
+/*
+.gallery {
+    background-color: var(--neutral-light);
+    border: 2px solid var(--text-color);
+    padding: 24px;
+    margin: 20px 0;
+}
+*/
+
+.gallery h2 {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+/* Uncomment to enable image styling in gallery */
+/*
+.gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+*/

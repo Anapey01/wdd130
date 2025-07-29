@@ -6,7 +6,11 @@
     <meta name="description" content="A water rafting company">
     <meta name="author" content="Gabriel Anapey">
     <title>About Us - Water Rafting Company</title>
+
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="styles/rafting.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
@@ -17,40 +21,65 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="trips.htm">Trips</a>
+            <!-- File extension corrected from .htm to .html -->
+            <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+
     <main>
         <div class="hero">
             <img src="images/image1.webp" alt="Rafters enjoying white water adventure">
-            <h1>About Us - Water Rafting Company</h1>
+            <!--<h1>About Us - Water Rafting Company</h1>-->
             <article>
+                <h1>About Us - Water Rafting Company</h1>
                 <img src="images/image8.png" alt="Happy family after rafting trip">
                 <p>
                     At Whitewater Adventures, we create unforgettable rafting experiences that connect you with nature's raw power.
                 </p>
             </article>
-        </div>
-        
-       
+        </div> <!-- Closing tag added for .hero div to prevent nesting errors -->
+
         <section>
-            <h2>History</h2>
-            <p>
-                Founded in 2000, Whitewater Adventures started as a small family-run business with a passion for rafting and a love for the great outdoors. 
-            </p>    
+            <h2>Our History</h2>
+            <div class="history-content">
+                <p>
+                    Established in 2000, Whitewater Adventures began as a small, family-owned business fueled by a passion for rafting and a deep appreciation for the outdoors. Founders John and Mary Thompson started with just two rafts and a vision to share the excitement and beauty of white water rafting with others.
+                </p>
+                <p>
+                    Since then, we have grown into a leading rafting company in the region, while staying true to our core values: safety, adventure, and environmental stewardship. Our commitment is to deliver memorable experiences and uphold the highest standards of safety and respect for nature.
+                </p>
+            </div>
         </section>
-        
-        <section>
+
+        <section class="gallery">
             <h2>Adventure Awaits You</h2>
-            <img src="images/image2.jpg" alt="Boston River">
-            <img src="images/image3.jpg" alt="Calm River ">
-            <img src="images/image4.webp" alt="Raph River">
-            <img src="images/image5.webp" alt="Smoeky River">
-            <img src="images/image6.jpg" alt="Peaceful raid">
+            <div class="gallery-images">
+                <figure>
+                    <img src="images/image2.jpg" alt="Boston River">
+                    <figcaption>Boston River</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image3.jpg" alt="Calm River">
+                    <figcaption>Calm River</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image4.webp" alt="Raph River">
+                    <figcaption>Raph River</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image5.webp" alt="Smoky River">
+                    <figcaption>Smoky River</figcaption>
+                </figure>
+                <figure>
+                    <!-- Alt text spelling corrected: 'Raid' -> 'Ride' -->
+                    <img src="images/image6.jpg" alt="Peaceful ride">
+                    <figcaption>Peaceful Ride</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
-    
+
     <footer>
         <nav class="socialMedia">
             <a href="https://www.facebook.com">
@@ -64,6 +93,6 @@
             </a>
         </nav>
         <p>©2025 ❖ Gabriel Anapey ❖ Ghana, Ho</p>
-    </footer>   
+    </footer>
 </body>
 </html>
