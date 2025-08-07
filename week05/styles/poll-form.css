@@ -67,6 +67,19 @@ input[type="checkbox"] {
     cursor: pointer;       /* Shows it's clickable */
 }
 
+.form-item{
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
 button {
     background-color: #2c2c2c; /* Dark shade */
     color: white; /* White text */
