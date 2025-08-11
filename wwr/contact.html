@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A water rafting company contact infotmation page">
+    <meta name="author" content="Gabriel Anapey">
+    <title>Contact - Water Rafting Company</title>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles/rafting.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <!-- File extension corrected from .htm to .html -->
+            <a href="trips.html">Trips</a>
+            <a  class= "current" href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+    <h1>Contact Us</h1>
+
+    <h2>Send us a message</h2>
+
+    <p><strong>White Water Rafting</strong></p>
+    <p>Address: 123 Riverbank Road, Accra, Ghana</p>
+    <p>Phone: +233 (0)54 524 2658</p>
+    <p>Email: <a href="mailto:gabriel.k.anapey@gmail.com">gabriel.k.anapey@gmail.com</a></p>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1017233.179523305!2d-1.0747359574388267!3d5.17310724920355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1754691738814!5m2!1sen!2sgh"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <div class="employees">
+            <img src="images/employee1.jpg" alt="Employee 1">
+            <img src="images/employee2.jpg" alt="Employee 2">
+            <img src="images/employee3.jpg" alt="Employee 3">
+            <img src="images/employee4.jpg" alt="Employee 4">
+    </div>
+
+    <form>
+    <fieldset>
+        <legend>Contact Form</legend>
+        <div class="form-item">
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-item">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <fieldset class="form-item">
+            <legend>Reason for Contact</legend>
+            <input type="radio" id="general_inquiry" name="contact_reason" value="general_inquiry">
+            <label for="general_inquiry">General Inquiry</label>
+            <input type="radio" id="reservation_question" name="contact_reason" value="reservation_question">
+            <label for="reservation_question">Reservation Question</label>
+            <input type="radio" id="website_suggestion" name="contact_reason" value="website_suggestion">
+            <label for="website_suggestion">Website Suggestion</label>
+        </fieldset>
+        <div class="form-item">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-item">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Please subscribe to my monthly newsletter</label>
+        </div>
+        <button type="submit">Send</button>
+    </fieldset>
+</form>   
+    
+</main>
+
+
+    <footer>
+        <nav class="socialMedia">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/instag2.webp" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="images/twitter.webp" alt="Twitter">
+            </a>
+        </nav>
+        <p>©2025 ❖ Gabriel Anapey ❖ Ghana, Ho</p>
+    </footer>
+</body>
+</html>
