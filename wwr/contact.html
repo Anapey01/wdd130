@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A water rafting company contact infotmation page">
+    <meta name="description" content="A water rafting company contact information page">
     <meta name="author" content="Gabriel Anapey">
     <title>Contact - Water Rafting Company</title>
 
@@ -21,74 +21,117 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <!-- File extension corrected from .htm to .html -->
             <a href="trips.html">Trips</a>
-            <a  class= "current" href="contact.html">Contact Us</a>
+            <a class="current" href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
-    <h1>Contact Us</h1>
+        <!-- Page title -->
+        <section>
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Send us a message, give us a call, or stop by our office.</p>
+        </section>
 
-    <h2>Send us a message</h2>
+        <!-- Contact form -->
+        <section>
+            <h2>Send Us a Message</h2>
+            <form>
+                <fieldset>
+                    <legend>Contact Form</legend>
 
-    <p><strong>White Water Rafting</strong></p>
-    <p>Address: 123 Riverbank Road, Accra, Ghana</p>
-    <p>Phone: +233 (0)54 524 2658</p>
-    <p>Email: <a href="mailto:gabriel.k.anapey@gmail.com">gabriel.k.anapey@gmail.com</a></p>
+                    <div class="form-item">
+                        <label for="username">Name:</label>
+                        <input type="text" id="username" name="username" placeholder="Your full name" required>
+                    </div>
 
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1017233.179523305!2d-1.0747359574388267!3d5.17310724920355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1754691738814!5m2!1sen!2sgh"
-            width="600"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
+                    <div class="form-item">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
 
-    <div class="employees">
-            <img src="images/employee1.jpg" alt="Employee 1">
-            <img src="images/employee2.jpg" alt="Employee 2">
-            <img src="images/employee3.jpg" alt="Employee 3">
-            <img src="images/employee4.jpg" alt="Employee 4">
-    </div>
+                    <fieldset class="form-item">
+                        <legend>Reason for Contact</legend>
+                        <div>
+                            <input type="radio" id="general_inquiry" name="contact_reason" value="general_inquiry">
+                            <label for="general_inquiry">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="reservation_question" name="contact_reason" value="reservation_question">
+                            <label for="reservation_question">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="website_suggestion" name="contact_reason" value="website_suggestion">
+                            <label for="website_suggestion">Website Suggestion</label>
+                        </div>
+                    </fieldset>
 
-    <form>
-    <fieldset>
-        <legend>Contact Form</legend>
-        <div class="form-item">
-            <label for="username">Name:</label>
-            <input type="text" id="username" name="username" required>
+                    <div class="form-item">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                    </div>
+
+                    <div class="form-item">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Please subscribe to my monthly newsletter</label>
+                    </div>
+
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </section>
+
+        
+         <div class="contact-container">
+
+            
+            <!-- Contact info -->
+            <section class="contact-info">
+                <h2>Our Contact Details</h2>
+                <p><strong>White Water Rafting</strong></p>
+                <address>
+                    123 Riverbank Road, Accra, Ghana<br>
+                    Phone: <a href="tel:+233545242658">+233 (0)54 524 2658</a><br>
+                    Email: <a href="mailto:gabriel.k.anapey@gmail.com">gabriel.k.anapey@gmail.com</a>
+                </address>
+            </section>
+
+            <!-- Map -->
+            <section class="map">
+                <h2>Find Us</h2>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1017233.179523305!2d-1.0747359574388267!3d5.17310724920355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1754691738814!5m2!1sen!2sgh"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="White Water Rafting Location Map">
+                </iframe>
+            </section>
         </div>
-        <div class="form-item">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <fieldset class="form-item">
-            <legend>Reason for Contact</legend>
-            <input type="radio" id="general_inquiry" name="contact_reason" value="general_inquiry">
-            <label for="general_inquiry">General Inquiry</label>
-            <input type="radio" id="reservation_question" name="contact_reason" value="reservation_question">
-            <label for="reservation_question">Reservation Question</label>
-            <input type="radio" id="website_suggestion" name="contact_reason" value="website_suggestion">
-            <label for="website_suggestion">Website Suggestion</label>
-        </fieldset>
-        <div class="form-item">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div class="form-item">
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <label for="newsletter">Please subscribe to my monthly newsletter</label>
-        </div>
-        <button type="submit">Send</button>
-    </fieldset>
-</form>   
-    
-</main>
-
+        
+        <!-- Employee team -->
+        <section>
+            <h2>Meet Our Team</h2>
+            <div class="employees">
+                <figure>
+                    <img src="images/employee1.jpg" alt="John, River Guide leading rafting trips">
+                    <figcaption>John — River Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Mary, Safety Instructor ensuring trip safety">
+                    <figcaption>Mary — Safety Instructor</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee5 (1).webp" alt="Kwame, Customer Service answering trip questions">
+                    <figcaption>Kwame — Customer Service</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee6.webp" alt="Akosua, Rafting Expert leading challenging runs">
+                    <figcaption>Akosua — Rafting Expert</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <nav class="socialMedia">
@@ -103,6 +146,7 @@
             </a>
         </nav>
         <p>©2025 ❖ Gabriel Anapey ❖ Ghana, Ho</p>
+        <a href="https://app.moqups.com/pRh550ieHyTa1hbjZhV4Dc6jdoEKPz0g/view/page/ad64222d5">Wireframe</a>
     </footer>
 </body>
 </html>
