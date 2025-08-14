@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A water rafting company Home information page">
+    <meta name="author" content="Gabriel Anapey">
+    <title>Home - Water Rafting Company</title>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles/rafting.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <a class="current" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page title -->
+        <div class="hero">
+            <img src="images/image1.webp" alt="Rafters enjoying white water adventure">
+            <h1>Home</h1>
+        </div>
+
+                <!-- Newsletter sign up form -->
+        <section>
+            <h2>Subscribe for Trip Updates & Special Offers</h2>
+            <form>
+                <fieldset>
+                    <legend>Newsletter Signup</legend>
+
+                    <div class="form-item">
+                        <label for="username">Name:</label>
+                        <input type="text" id="username" name="username" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <button type="submit">Subscribe</button>
+                </fieldset>
+            </form>
+        </section>
+        
+        <!-- Call-to-action section encouraging users to explore what makes the company unique -->
+        <section class="cta">
+            <h2>Think All Rafting Companies Are the Same?</h2>
+            <p>From coast to coast, we create the most memorable water adventures. Experience the difference!</p>
+            <a href="trips.html" class="cta-button">See What Makes Us Special</a>
+        </section>
+
+        <!-- Image grid section showcasing different adventure experiences -->
+        <section class="home-images">
+            <div class="grid-item">
+            <img src="images/home2.webp" alt="Divers exploring ocean depths">
+            <h3>Ocean Adventures</h3>
+            <p>Dive into crystal-clear waters...</p>
+            </div>
+            
+            <div class="grid-item">
+            <img src="images/home1.webp" alt="Rafters with safety gear">
+            <h3>Safe Rocky Rapids</h3>
+            <p>Navigate challenging terrain...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="socialMedia">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/instag2.webp" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="images/twitter.webp" alt="Twitter">
+            </a>
+        </nav>
+        <p>©2025 ❖ Gabriel Anapey ❖ Ghana, Ho</p>
+    </footer>
+</body>
+</html>
